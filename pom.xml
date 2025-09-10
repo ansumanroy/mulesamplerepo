@@ -4,7 +4,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.jfrog</groupId>
+  <groupId>orgmulesoft-health</groupId>
   <artifactId>my-jfrog-app</artifactId>
   <version>1.0-SNAPSHOT</version>
 
@@ -72,4 +72,11 @@
       </plugins>
     </pluginManagement>
   </build>
+  <distributionManagement>
+    <snapshotRepository>
+      <id>snapshots</id>
+      <name>ansumanroy-mule-example-libs-snapshot-snapshots</name>
+      <url>https://ansumanroy.jfrog.io/artifactory/mule-example-libs-snapshot</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
