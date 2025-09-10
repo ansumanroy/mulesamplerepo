@@ -6,7 +6,7 @@
 
   <groupId>orgmulesoft-health</groupId>
   <artifactId>my-jfrog-app</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <version>1.0.3</version>
 
   <name>my-jfrog-app</name>
   <!-- FIXME change it to the project's website -->
@@ -72,11 +72,39 @@
       </plugins>
     </pluginManagement>
   </build>
+<!--  <distributionManagement>-->
+<!--    <snapshotRepository>-->
+<!--      <id>snapshots</id>-->
+<!--      <name>ansumanroy-mule-example-libs-snapshot-snapshots</name>-->
+<!--      <url>https://ansumanroy.jfrog.io/artifactory/mule-example-libs-snapshot</url>-->
+<!--    </snapshotRepository>-->
+<!--&lt;!&ndash;    <repository>&ndash;&gt;-->
+<!--&lt;!&ndash;      <id>central</id>&ndash;&gt;-->
+<!--&lt;!&ndash;      <name>ansumanroy-mule-example-libs-release</name>&ndash;&gt;-->
+<!--&lt;!&ndash;      <url>https://ansumanroy.jfrog.io/artifactory/mule-example-libs-release</url>&ndash;&gt;-->
+<!--&lt;!&ndash;    </repository>&ndash;&gt;-->
+<!--    <repository>-->
+<!--      <id>central</id>-->
+<!--      <name>ansumanroy-mule-example-libs-snapshot-snapshots</name>-->
+<!--      <url>https://ansumanroy.jfrog.io/artifactory/mule-example-libs-snapshot</url>-->
+<!--    </repository>-->
+<!--    -->
+<!--    -->
+
+
+<!--  </distributionManagement>-->
   <distributionManagement>
     <snapshotRepository>
       <id>snapshots</id>
-      <name>ansumanroy-mule-example-libs-snapshot-snapshots</name>
+      <name>ansumanroy-mule-example-libs-snapshot</name>
       <url>https://ansumanroy.jfrog.io/artifactory/mule-example-libs-snapshot</url>
     </snapshotRepository>
+
+    <repository>
+      <id>central</id>
+      <name>ansumanroy-mule-example-libs-snapshot</name>
+      <url>https://ansumanroy.jfrog.io/artifactory/mule-example-libs-snapshot</url>
+    </repository>
   </distributionManagement>
 </project>
+
